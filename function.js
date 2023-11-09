@@ -1,0 +1,69 @@
+// Functions are a way to store a re-usable snippet of code in a block which can
+// be run later. For example, this function would print the current time when invoked:
+const printCurrentTime = () => {
+  const currentTime = new Date();
+  return currentTime.toLocaleTimeString();
+};
+
+// Task 1: Invoke the printCurrentTime function inside a console.log():
+
+console.log(printCurrentTime());
+
+// Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
+
+function printName() {
+  console.log("Elias");
+}
+
+printName();
+printName();
+
+// Task 3: Write a function called `printGreeting`. When invoked using the examples
+// below, it should print "Hello Bob" or "Hello Sue":
+
+function printGreeting(name) {
+  console.log("Hello " + name);
+}
+
+printGreeting("Bob");
+printGreeting("Sue");
+
+//
+// printGreeting("Bob") // This should print "Hello Bob"
+// printGreeting("Sue") // This should print "Hello Sue"
+
+// Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
+// so that it can be stored in a variable. See the example below to see how it should work.
+
+//
+// const first = multiply(2, 2)
+// console.log(first) // this should print "4"
+//
+// const second = multiply(100, 4)
+// console.log(second) // this should print "400"
+
+function multiply(a, b) {
+  return a * b;
+}
+
+const first = multiply(2, 2);
+console.log(first); // This will print "4"
+
+const second = multiply(100, 4);
+console.log(second); // This will print "400"
+
+// Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
+// `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
+// function. It should print "Go for a run!"
+//
+// if (warmEnough(15)) {
+//   console.log("Go for a run!")
+// }
+
+function warmEnough(currentTemperature) {
+  return currentTemperature > 10;
+}
+
+if (warmEnough(15)) {
+  console.log("Go for a run!");
+}
